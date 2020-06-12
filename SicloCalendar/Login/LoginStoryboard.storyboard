@@ -24,7 +24,7 @@
                                         <color key="backgroundColor" name="WhiteSiclo"/>
                                         <color key="textColor" name="BlackSiclo"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JF1-iV-0AH">
                                         <rect key="frame" x="20" y="185" width="290" height="34"/>
@@ -146,16 +146,16 @@
         <image name="avatar" width="800" height="800"/>
         <image name="plus" width="510" height="137"/>
         <namedColor name="BlackSiclo">
-            <color red="0.066654182970000003" green="0.066673852500000005" blue="0.066652916369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.067000001668930054" green="0.067000001668930054" blue="0.067000001668930054" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="GreenSiclo">
-            <color red="0.84378665689999999" green="0.99827760460000003" blue="0.57047754530000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.84399998188018799" green="0.99800002574920654" blue="0.56999999284744263" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="WhiteSiclo">
-            <color red="0.94487851860000005" green="0.94902163740000001" blue="0.95303434129999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.94499999284744263" green="0.94900000095367432" blue="0.95300000905990601" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="YellowSiclo">
-            <color red="0.92375057940000005" green="0.84952569010000001" blue="0.66892778870000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.92400002479553223" green="0.85000002384185791" blue="0.66900002956390381" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

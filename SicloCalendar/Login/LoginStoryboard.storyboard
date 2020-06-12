@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="NDf-vg-chq">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Nil-I6-UjJ" customClass="LoginViewController" customModule="SicloCalendar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Utb-5K-aZg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ajv-vv-5y2">
+                                <rect key="frame" x="42" y="288" width="330" height="330"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Correo" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JcN-Ti-GlJ">
+                                        <rect key="frame" x="20" y="131" width="290" height="34"/>
+                                        <color key="backgroundColor" name="WhiteSiclo"/>
+                                        <color key="textColor" name="BlackSiclo"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JF1-iV-0AH">
+                                        <rect key="frame" x="20" y="185" width="290" height="34"/>
+                                        <color key="backgroundColor" name="WhiteSiclo"/>
+                                        <color key="textColor" name="BlackSiclo"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                    </textField>
+                                    <segmentedControl hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="hil-Q8-Mfc">
+                                        <rect key="frame" x="20" y="70" width="290" height="32"/>
+                                        <color key="backgroundColor" name="YellowSiclo"/>
+                                        <segments>
+                                            <segment title="Iniciar sesion"/>
+                                            <segment title="Crear cuenta"/>
+                                        </segments>
+                                        <color key="selectedSegmentTintColor" name="GreenSiclo"/>
+                                        <connections>
+                                            <action selector="signInChanged:" destination="Nil-I6-UjJ" eventType="valueChanged" id="GDK-w4-Uwd"/>
+                                        </connections>
+                                    </segmentedControl>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zKF-70-0L8">
+                                        <rect key="frame" x="105" y="239" width="120" height="45"/>
+                                        <color key="backgroundColor" name="GreenSiclo"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="120" id="Yz2-if-GE5"/>
+                                            <constraint firstAttribute="height" constant="45" id="fEn-fZ-5v5"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="Iniciar sesión">
+                                            <color key="titleColor" name="BlackSiclo"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="loginRegisterActionWithSender:" destination="Nil-I6-UjJ" eventType="touchUpInside" id="OU9-hk-QCw"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K4r-Mi-awP">
+                                        <rect key="frame" x="99.5" y="296" width="131" height="26"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                        <state key="normal" title="Olvidaste tu contraseña?">
+                                            <color key="titleColor" name="GreenSiclo"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="forgotPasswordActionWithSender:" destination="Nil-I6-UjJ" eventType="touchUpInside" id="g9R-Yf-rSZ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" name="BlackSiclo"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ajv-vv-5y2" secondAttribute="height" multiplier="1:1" id="0JU-1I-cng"/>
+                                    <constraint firstItem="JcN-Ti-GlJ" firstAttribute="top" secondItem="hil-Q8-Mfc" secondAttribute="bottom" constant="30" id="4If-fn-Qfw"/>
+                                    <constraint firstAttribute="height" constant="330" id="6hK-4e-Lv3">
+                                        <variation key="heightClass=compact-widthClass=compact" constant="300"/>
+                                        <variation key="heightClass=compact-widthClass=regular" constant="330"/>
+                                        <variation key="heightClass=regular-widthClass=compact" constant="330"/>
+                                        <variation key="heightClass=regular-widthClass=regular" constant="330"/>
+                                    </constraint>
+                                    <constraint firstItem="JF1-iV-0AH" firstAttribute="leading" secondItem="ajv-vv-5y2" secondAttribute="leading" constant="20" id="8RM-s4-Ire"/>
+                                    <constraint firstItem="JcN-Ti-GlJ" firstAttribute="leading" secondItem="ajv-vv-5y2" secondAttribute="leading" constant="20" id="Hxf-wP-e6Q"/>
+                                    <constraint firstAttribute="trailing" secondItem="JF1-iV-0AH" secondAttribute="trailing" constant="20" id="LRD-YN-LC5"/>
+                                    <constraint firstItem="JF1-iV-0AH" firstAttribute="top" secondItem="JcN-Ti-GlJ" secondAttribute="bottom" constant="20" id="PGH-hp-5Lx"/>
+                                    <constraint firstAttribute="trailing" secondItem="hil-Q8-Mfc" secondAttribute="trailing" constant="20" id="VQK-9H-4Uv"/>
+                                    <constraint firstItem="hil-Q8-Mfc" firstAttribute="leading" secondItem="ajv-vv-5y2" secondAttribute="leading" constant="20" id="Xep-Fw-OaI"/>
+                                    <constraint firstItem="zKF-70-0L8" firstAttribute="centerX" secondItem="ajv-vv-5y2" secondAttribute="centerX" id="Z0a-Lw-Ja5"/>
+                                    <constraint firstAttribute="bottom" secondItem="K4r-Mi-awP" secondAttribute="bottom" constant="8" id="e6D-Hl-F7v"/>
+                                    <constraint firstItem="K4r-Mi-awP" firstAttribute="centerX" secondItem="ajv-vv-5y2" secondAttribute="centerX" id="fQG-F9-3o2"/>
+                                    <constraint firstItem="hil-Q8-Mfc" firstAttribute="top" secondItem="ajv-vv-5y2" secondAttribute="top" constant="70" id="k2o-L8-6ji"/>
+                                    <constraint firstAttribute="trailing" secondItem="JcN-Ti-GlJ" secondAttribute="trailing" constant="20" id="pkL-DX-qMa"/>
+                                    <constraint firstItem="zKF-70-0L8" firstAttribute="top" secondItem="JF1-iV-0AH" secondAttribute="bottom" constant="20" id="tiO-QJ-7oM"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar" translatesAutoresizingMaskIntoConstraints="NO" id="il0-fP-cJc">
+                                <rect key="frame" x="157" y="238" width="100" height="100"/>
+                                <color key="backgroundColor" name="WhiteSiclo"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="NmR-Q9-9Ov">
+                                        <variation key="heightClass=compact-widthClass=compact" constant="0.0"/>
+                                        <variation key="heightClass=compact-widthClass=regular" constant="0.0"/>
+                                    </constraint>
+                                    <constraint firstAttribute="width" secondItem="il0-fP-cJc" secondAttribute="height" multiplier="1:1" id="bf2-b1-0ea"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plus" translatesAutoresizingMaskIntoConstraints="NO" id="91e-rA-nWU">
+                                <rect key="frame" x="167" y="64" width="80" height="67"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="EnG-GN-2PX"/>
+                                    <constraint firstAttribute="height" constant="67" id="z6t-4G-c2I"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" name="BlackSiclo"/>
+                        <constraints>
+                            <constraint firstItem="ajv-vv-5y2" firstAttribute="top" secondItem="il0-fP-cJc" secondAttribute="bottom" constant="-50" id="704-vl-j0C"/>
+                            <constraint firstItem="91e-rA-nWU" firstAttribute="centerX" secondItem="qf2-8W-QaC" secondAttribute="centerX" id="DKq-Ep-vLr"/>
+                            <constraint firstItem="91e-rA-nWU" firstAttribute="top" secondItem="qf2-8W-QaC" secondAttribute="top" constant="20" id="ZgC-8M-bN3"/>
+                            <constraint firstItem="il0-fP-cJc" firstAttribute="centerX" secondItem="ajv-vv-5y2" secondAttribute="centerX" id="aef-3u-zDn"/>
+                            <constraint firstItem="ajv-vv-5y2" firstAttribute="centerY" secondItem="qf2-8W-QaC" secondAttribute="centerY" id="bXh-w8-n7S"/>
+                            <constraint firstItem="ajv-vv-5y2" firstAttribute="centerX" secondItem="qf2-8W-QaC" secondAttribute="centerX" id="p0w-ut-BNy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qf2-8W-QaC"/>
+                    </view>
+                    <connections>
+                        <outlet property="avatarImg" destination="il0-fP-cJc" id="oa8-y7-mk6"/>
+                        <outlet property="emailTopConstraint" destination="4If-fn-Qfw" id="A9K-2e-I4j"/>
+                        <outlet property="emailTxtField" destination="JcN-Ti-GlJ" id="kWt-Hv-V3E"/>
+                        <outlet property="forgotPassword" destination="K4r-Mi-awP" id="cDy-x1-7bc"/>
+                        <outlet property="loginRegisterButton" destination="zKF-70-0L8" id="zU9-Pu-X6z"/>
+                        <outlet property="loginSectionView" destination="ajv-vv-5y2" id="P3v-i4-Mwb"/>
+                        <outlet property="passTxtField" destination="JF1-iV-0AH" id="bcZ-le-hPf"/>
+                        <outlet property="segmentedController" destination="hil-Q8-Mfc" id="UqS-y6-n9d"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d3P-tU-y7B" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-98.4375" y="-105.79710144927537"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="avatar" width="800" height="800"/>
+        <image name="plus" width="510" height="137"/>
+        <namedColor name="BlackSiclo">
+            <color red="0.066654182970000003" green="0.066673852500000005" blue="0.066652916369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="GreenSiclo">
+            <color red="0.84378665689999999" green="0.99827760460000003" blue="0.57047754530000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="WhiteSiclo">
+            <color red="0.94487851860000005" green="0.94902163740000001" blue="0.95303434129999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="YellowSiclo">
+            <color red="0.92375057940000005" green="0.84952569010000001" blue="0.66892778870000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

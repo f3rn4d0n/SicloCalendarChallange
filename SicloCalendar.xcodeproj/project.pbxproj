@@ -10,14 +10,21 @@
 		8459659365998461A412A8F5 /* libPods-SicloCalendar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 072B443AD516C41687EAB5F0 /* libPods-SicloCalendar.a */; };
 		CED4AE73249308F600CA8028 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4AE72249308F600CA8028 /* AppDelegate.swift */; };
 		CED4AE75249308F600CA8028 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4AE74249308F600CA8028 /* SceneDelegate.swift */; };
-		CED4AE77249308F600CA8028 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4AE76249308F600CA8028 /* ViewController.swift */; };
-		CED4AE7A249308F600CA8028 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CED4AE78249308F600CA8028 /* Main.storyboard */; };
 		CED4AE7D249308F600CA8028 /* SicloCalendar.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CED4AE7B249308F600CA8028 /* SicloCalendar.xcdatamodeld */; };
 		CED4AE7F249308FB00CA8028 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CED4AE7E249308FB00CA8028 /* Assets.xcassets */; };
 		CED4AE82249308FB00CA8028 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CED4AE80249308FB00CA8028 /* LaunchScreen.storyboard */; };
 		CED4AE8D249308FB00CA8028 /* SicloCalendarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4AE8C249308FB00CA8028 /* SicloCalendarTests.swift */; };
 		CED4AE98249308FB00CA8028 /* SicloCalendarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4AE97249308FB00CA8028 /* SicloCalendarUITests.swift */; };
 		CED4AEA72493116C00CA8028 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CED4AEA62493116C00CA8028 /* GoogleService-Info.plist */; };
+		CED4AEAA24934B8700CA8028 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4AEA924934B8700CA8028 /* LoginViewController.swift */; };
+		CED4AEAC24934BCF00CA8028 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4AEAB24934BCF00CA8028 /* LoginPresenter.swift */; };
+		CED4AEAE24934BDA00CA8028 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4AEAD24934BDA00CA8028 /* LoginInteractor.swift */; };
+		CED4AEB024934BEA00CA8028 /* LoginEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4AEAF24934BEA00CA8028 /* LoginEntity.swift */; };
+		CED4AEB224934BF900CA8028 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4AEB124934BF900CA8028 /* LoginRouter.swift */; };
+		CED4AEB424934C0300CA8028 /* LoginProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4AEB324934C0300CA8028 /* LoginProtocol.swift */; };
+		CED4AEB62493540B00CA8028 /* LoginStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CED4AEB52493540B00CA8028 /* LoginStoryboard.storyboard */; };
+		CED4AEB82493564600CA8028 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CED4AEB72493564600CA8028 /* Colors.xcassets */; };
+		CED4AEBB2493616600CA8028 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4AEBA2493616600CA8028 /* StringExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,8 +50,6 @@
 		CED4AE6F249308F600CA8028 /* SicloCalendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SicloCalendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CED4AE72249308F600CA8028 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CED4AE74249308F600CA8028 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CED4AE76249308F600CA8028 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CED4AE79249308F600CA8028 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CED4AE7C249308F600CA8028 /* SicloCalendar.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SicloCalendar.xcdatamodel; sourceTree = "<group>"; };
 		CED4AE7E249308FB00CA8028 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CED4AE81249308FB00CA8028 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,6 +61,15 @@
 		CED4AE97249308FB00CA8028 /* SicloCalendarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SicloCalendarUITests.swift; sourceTree = "<group>"; };
 		CED4AE99249308FB00CA8028 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CED4AEA62493116C00CA8028 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CED4AEA924934B8700CA8028 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		CED4AEAB24934BCF00CA8028 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		CED4AEAD24934BDA00CA8028 /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		CED4AEAF24934BEA00CA8028 /* LoginEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginEntity.swift; sourceTree = "<group>"; };
+		CED4AEB124934BF900CA8028 /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		CED4AEB324934C0300CA8028 /* LoginProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginProtocol.swift; sourceTree = "<group>"; };
+		CED4AEB52493540B00CA8028 /* LoginStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginStoryboard.storyboard; sourceTree = "<group>"; };
+		CED4AEB72493564600CA8028 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		CED4AEBA2493616600CA8028 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		ED6BA3C9B9C325F74830B476 /* Pods-SicloCalendar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SicloCalendar.release.xcconfig"; path = "Target Support Files/Pods-SicloCalendar/Pods-SicloCalendar.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -128,11 +142,10 @@
 		CED4AE71249308F600CA8028 /* SicloCalendar */ = {
 			isa = PBXGroup;
 			children = (
+				CED4AEB92493615200CA8028 /* Extensions */,
+				CED4AEA82493469F00CA8028 /* Login */,
 				CED4AE72249308F600CA8028 /* AppDelegate.swift */,
 				CED4AE74249308F600CA8028 /* SceneDelegate.swift */,
-				CED4AE76249308F600CA8028 /* ViewController.swift */,
-				CED4AE78249308F600CA8028 /* Main.storyboard */,
-				CED4AE7E249308FB00CA8028 /* Assets.xcassets */,
 				CED4AE80249308FB00CA8028 /* LaunchScreen.storyboard */,
 				CED4AE83249308FB00CA8028 /* Info.plist */,
 				CED4AE7B249308F600CA8028 /* SicloCalendar.xcdatamodeld */,
@@ -161,9 +174,33 @@
 		CED4AEA52493115E00CA8028 /* Configuration */ = {
 			isa = PBXGroup;
 			children = (
+				CED4AE7E249308FB00CA8028 /* Assets.xcassets */,
+				CED4AEB72493564600CA8028 /* Colors.xcassets */,
 				CED4AEA62493116C00CA8028 /* GoogleService-Info.plist */,
 			);
 			path = Configuration;
+			sourceTree = "<group>";
+		};
+		CED4AEA82493469F00CA8028 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				CED4AEB52493540B00CA8028 /* LoginStoryboard.storyboard */,
+				CED4AEA924934B8700CA8028 /* LoginViewController.swift */,
+				CED4AEAB24934BCF00CA8028 /* LoginPresenter.swift */,
+				CED4AEAD24934BDA00CA8028 /* LoginInteractor.swift */,
+				CED4AEB324934C0300CA8028 /* LoginProtocol.swift */,
+				CED4AEB124934BF900CA8028 /* LoginRouter.swift */,
+				CED4AEAF24934BEA00CA8028 /* LoginEntity.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		CED4AEB92493615200CA8028 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CED4AEBA2493616600CA8028 /* StringExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,10 +308,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CED4AEB82493564600CA8028 /* Colors.xcassets in Resources */,
 				CED4AE82249308FB00CA8028 /* LaunchScreen.storyboard in Resources */,
+				CED4AEB62493540B00CA8028 /* LoginStoryboard.storyboard in Resources */,
 				CED4AEA72493116C00CA8028 /* GoogleService-Info.plist in Resources */,
 				CED4AE7F249308FB00CA8028 /* Assets.xcassets in Resources */,
-				CED4AE7A249308F600CA8028 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,9 +362,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CED4AE77249308F600CA8028 /* ViewController.swift in Sources */,
+				CED4AEAC24934BCF00CA8028 /* LoginPresenter.swift in Sources */,
+				CED4AEB024934BEA00CA8028 /* LoginEntity.swift in Sources */,
+				CED4AEBB2493616600CA8028 /* StringExtension.swift in Sources */,
+				CED4AEAE24934BDA00CA8028 /* LoginInteractor.swift in Sources */,
 				CED4AE73249308F600CA8028 /* AppDelegate.swift in Sources */,
+				CED4AEB224934BF900CA8028 /* LoginRouter.swift in Sources */,
 				CED4AE7D249308F600CA8028 /* SicloCalendar.xcdatamodeld in Sources */,
+				CED4AEB424934C0300CA8028 /* LoginProtocol.swift in Sources */,
+				CED4AEAA24934B8700CA8028 /* LoginViewController.swift in Sources */,
 				CED4AE75249308F600CA8028 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -363,14 +407,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		CED4AE78249308F600CA8028 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CED4AE79249308F600CA8028 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CED4AE80249308FB00CA8028 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

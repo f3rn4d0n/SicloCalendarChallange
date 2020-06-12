@@ -1,0 +1,612 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CED4AE73249308F600CA8028 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4AE72249308F600CA8028 /* AppDelegate.swift */; };
+		CED4AE75249308F600CA8028 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4AE74249308F600CA8028 /* SceneDelegate.swift */; };
+		CED4AE77249308F600CA8028 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4AE76249308F600CA8028 /* ViewController.swift */; };
+		CED4AE7A249308F600CA8028 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CED4AE78249308F600CA8028 /* Main.storyboard */; };
+		CED4AE7D249308F600CA8028 /* SicloCalendar.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CED4AE7B249308F600CA8028 /* SicloCalendar.xcdatamodeld */; };
+		CED4AE7F249308FB00CA8028 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CED4AE7E249308FB00CA8028 /* Assets.xcassets */; };
+		CED4AE82249308FB00CA8028 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CED4AE80249308FB00CA8028 /* LaunchScreen.storyboard */; };
+		CED4AE8D249308FB00CA8028 /* SicloCalendarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4AE8C249308FB00CA8028 /* SicloCalendarTests.swift */; };
+		CED4AE98249308FB00CA8028 /* SicloCalendarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4AE97249308FB00CA8028 /* SicloCalendarUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CED4AE89249308FB00CA8028 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CED4AE67249308F500CA8028 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CED4AE6E249308F600CA8028;
+			remoteInfo = SicloCalendar;
+		};
+		CED4AE94249308FB00CA8028 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CED4AE67249308F500CA8028 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CED4AE6E249308F600CA8028;
+			remoteInfo = SicloCalendar;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CED4AE6F249308F600CA8028 /* SicloCalendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SicloCalendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CED4AE72249308F600CA8028 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CED4AE74249308F600CA8028 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CED4AE76249308F600CA8028 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CED4AE79249308F600CA8028 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CED4AE7C249308F600CA8028 /* SicloCalendar.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SicloCalendar.xcdatamodel; sourceTree = "<group>"; };
+		CED4AE7E249308FB00CA8028 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CED4AE81249308FB00CA8028 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CED4AE83249308FB00CA8028 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CED4AE88249308FB00CA8028 /* SicloCalendarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SicloCalendarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CED4AE8C249308FB00CA8028 /* SicloCalendarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SicloCalendarTests.swift; sourceTree = "<group>"; };
+		CED4AE8E249308FB00CA8028 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CED4AE93249308FB00CA8028 /* SicloCalendarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SicloCalendarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CED4AE97249308FB00CA8028 /* SicloCalendarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SicloCalendarUITests.swift; sourceTree = "<group>"; };
+		CED4AE99249308FB00CA8028 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CED4AE6C249308F600CA8028 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CED4AE85249308FB00CA8028 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CED4AE90249308FB00CA8028 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CED4AE66249308F500CA8028 = {
+			isa = PBXGroup;
+			children = (
+				CED4AE71249308F600CA8028 /* SicloCalendar */,
+				CED4AE8B249308FB00CA8028 /* SicloCalendarTests */,
+				CED4AE96249308FB00CA8028 /* SicloCalendarUITests */,
+				CED4AE70249308F600CA8028 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CED4AE70249308F600CA8028 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CED4AE6F249308F600CA8028 /* SicloCalendar.app */,
+				CED4AE88249308FB00CA8028 /* SicloCalendarTests.xctest */,
+				CED4AE93249308FB00CA8028 /* SicloCalendarUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CED4AE71249308F600CA8028 /* SicloCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				CED4AE72249308F600CA8028 /* AppDelegate.swift */,
+				CED4AE74249308F600CA8028 /* SceneDelegate.swift */,
+				CED4AE76249308F600CA8028 /* ViewController.swift */,
+				CED4AE78249308F600CA8028 /* Main.storyboard */,
+				CED4AE7E249308FB00CA8028 /* Assets.xcassets */,
+				CED4AE80249308FB00CA8028 /* LaunchScreen.storyboard */,
+				CED4AE83249308FB00CA8028 /* Info.plist */,
+				CED4AE7B249308F600CA8028 /* SicloCalendar.xcdatamodeld */,
+			);
+			path = SicloCalendar;
+			sourceTree = "<group>";
+		};
+		CED4AE8B249308FB00CA8028 /* SicloCalendarTests */ = {
+			isa = PBXGroup;
+			children = (
+				CED4AE8C249308FB00CA8028 /* SicloCalendarTests.swift */,
+				CED4AE8E249308FB00CA8028 /* Info.plist */,
+			);
+			path = SicloCalendarTests;
+			sourceTree = "<group>";
+		};
+		CED4AE96249308FB00CA8028 /* SicloCalendarUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CED4AE97249308FB00CA8028 /* SicloCalendarUITests.swift */,
+				CED4AE99249308FB00CA8028 /* Info.plist */,
+			);
+			path = SicloCalendarUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CED4AE6E249308F600CA8028 /* SicloCalendar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CED4AE9C249308FB00CA8028 /* Build configuration list for PBXNativeTarget "SicloCalendar" */;
+			buildPhases = (
+				CED4AE6B249308F600CA8028 /* Sources */,
+				CED4AE6C249308F600CA8028 /* Frameworks */,
+				CED4AE6D249308F600CA8028 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SicloCalendar;
+			productName = SicloCalendar;
+			productReference = CED4AE6F249308F600CA8028 /* SicloCalendar.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CED4AE87249308FB00CA8028 /* SicloCalendarTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CED4AE9F249308FB00CA8028 /* Build configuration list for PBXNativeTarget "SicloCalendarTests" */;
+			buildPhases = (
+				CED4AE84249308FB00CA8028 /* Sources */,
+				CED4AE85249308FB00CA8028 /* Frameworks */,
+				CED4AE86249308FB00CA8028 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CED4AE8A249308FB00CA8028 /* PBXTargetDependency */,
+			);
+			name = SicloCalendarTests;
+			productName = SicloCalendarTests;
+			productReference = CED4AE88249308FB00CA8028 /* SicloCalendarTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CED4AE92249308FB00CA8028 /* SicloCalendarUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CED4AEA2249308FB00CA8028 /* Build configuration list for PBXNativeTarget "SicloCalendarUITests" */;
+			buildPhases = (
+				CED4AE8F249308FB00CA8028 /* Sources */,
+				CED4AE90249308FB00CA8028 /* Frameworks */,
+				CED4AE91249308FB00CA8028 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CED4AE95249308FB00CA8028 /* PBXTargetDependency */,
+			);
+			name = SicloCalendarUITests;
+			productName = SicloCalendarUITests;
+			productReference = CED4AE93249308FB00CA8028 /* SicloCalendarUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CED4AE67249308F500CA8028 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = gastandotenis;
+				TargetAttributes = {
+					CED4AE6E249308F600CA8028 = {
+						CreatedOnToolsVersion = 11.4;
+					};
+					CED4AE87249308FB00CA8028 = {
+						CreatedOnToolsVersion = 11.4;
+						TestTargetID = CED4AE6E249308F600CA8028;
+					};
+					CED4AE92249308FB00CA8028 = {
+						CreatedOnToolsVersion = 11.4;
+						TestTargetID = CED4AE6E249308F600CA8028;
+					};
+				};
+			};
+			buildConfigurationList = CED4AE6A249308F500CA8028 /* Build configuration list for PBXProject "SicloCalendar" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CED4AE66249308F500CA8028;
+			productRefGroup = CED4AE70249308F600CA8028 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CED4AE6E249308F600CA8028 /* SicloCalendar */,
+				CED4AE87249308FB00CA8028 /* SicloCalendarTests */,
+				CED4AE92249308FB00CA8028 /* SicloCalendarUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CED4AE6D249308F600CA8028 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CED4AE82249308FB00CA8028 /* LaunchScreen.storyboard in Resources */,
+				CED4AE7F249308FB00CA8028 /* Assets.xcassets in Resources */,
+				CED4AE7A249308F600CA8028 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CED4AE86249308FB00CA8028 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CED4AE91249308FB00CA8028 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CED4AE6B249308F600CA8028 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CED4AE77249308F600CA8028 /* ViewController.swift in Sources */,
+				CED4AE73249308F600CA8028 /* AppDelegate.swift in Sources */,
+				CED4AE7D249308F600CA8028 /* SicloCalendar.xcdatamodeld in Sources */,
+				CED4AE75249308F600CA8028 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CED4AE84249308FB00CA8028 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CED4AE8D249308FB00CA8028 /* SicloCalendarTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CED4AE8F249308FB00CA8028 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CED4AE98249308FB00CA8028 /* SicloCalendarUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CED4AE8A249308FB00CA8028 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CED4AE6E249308F600CA8028 /* SicloCalendar */;
+			targetProxy = CED4AE89249308FB00CA8028 /* PBXContainerItemProxy */;
+		};
+		CED4AE95249308FB00CA8028 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CED4AE6E249308F600CA8028 /* SicloCalendar */;
+			targetProxy = CED4AE94249308FB00CA8028 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CED4AE78249308F600CA8028 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CED4AE79249308F600CA8028 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CED4AE80249308FB00CA8028 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CED4AE81249308FB00CA8028 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CED4AE9A249308FB00CA8028 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CED4AE9B249308FB00CA8028 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CED4AE9D249308FB00CA8028 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T94L48M7HD;
+				INFOPLIST_FILE = SicloCalendar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gastandotenis.SicloCalendar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CED4AE9E249308FB00CA8028 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T94L48M7HD;
+				INFOPLIST_FILE = SicloCalendar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gastandotenis.SicloCalendar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CED4AEA0249308FB00CA8028 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T94L48M7HD;
+				INFOPLIST_FILE = SicloCalendarTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gastandotenis.SicloCalendarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SicloCalendar.app/SicloCalendar";
+			};
+			name = Debug;
+		};
+		CED4AEA1249308FB00CA8028 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T94L48M7HD;
+				INFOPLIST_FILE = SicloCalendarTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gastandotenis.SicloCalendarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SicloCalendar.app/SicloCalendar";
+			};
+			name = Release;
+		};
+		CED4AEA3249308FB00CA8028 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T94L48M7HD;
+				INFOPLIST_FILE = SicloCalendarUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gastandotenis.SicloCalendarUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SicloCalendar;
+			};
+			name = Debug;
+		};
+		CED4AEA4249308FB00CA8028 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T94L48M7HD;
+				INFOPLIST_FILE = SicloCalendarUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gastandotenis.SicloCalendarUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SicloCalendar;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CED4AE6A249308F500CA8028 /* Build configuration list for PBXProject "SicloCalendar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CED4AE9A249308FB00CA8028 /* Debug */,
+				CED4AE9B249308FB00CA8028 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CED4AE9C249308FB00CA8028 /* Build configuration list for PBXNativeTarget "SicloCalendar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CED4AE9D249308FB00CA8028 /* Debug */,
+				CED4AE9E249308FB00CA8028 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CED4AE9F249308FB00CA8028 /* Build configuration list for PBXNativeTarget "SicloCalendarTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CED4AEA0249308FB00CA8028 /* Debug */,
+				CED4AEA1249308FB00CA8028 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CED4AEA2249308FB00CA8028 /* Build configuration list for PBXNativeTarget "SicloCalendarUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CED4AEA3249308FB00CA8028 /* Debug */,
+				CED4AEA4249308FB00CA8028 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CED4AE7B249308F600CA8028 /* SicloCalendar.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CED4AE7C249308F600CA8028 /* SicloCalendar.xcdatamodel */,
+			);
+			currentVersion = CED4AE7C249308F600CA8028 /* SicloCalendar.xcdatamodel */;
+			path = SicloCalendar.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CED4AE67249308F500CA8028 /* Project object */;
+}

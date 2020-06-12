@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8459659365998461A412A8F5 /* libPods-SicloCalendar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 072B443AD516C41687EAB5F0 /* libPods-SicloCalendar.a */; };
 		CED4AE73249308F600CA8028 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4AE72249308F600CA8028 /* AppDelegate.swift */; };
 		CED4AE75249308F600CA8028 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4AE74249308F600CA8028 /* SceneDelegate.swift */; };
 		CED4AE77249308F600CA8028 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4AE76249308F600CA8028 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 		CED4AE82249308FB00CA8028 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CED4AE80249308FB00CA8028 /* LaunchScreen.storyboard */; };
 		CED4AE8D249308FB00CA8028 /* SicloCalendarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4AE8C249308FB00CA8028 /* SicloCalendarTests.swift */; };
 		CED4AE98249308FB00CA8028 /* SicloCalendarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4AE97249308FB00CA8028 /* SicloCalendarUITests.swift */; };
+		CED4AEA72493116C00CA8028 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CED4AEA62493116C00CA8028 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		072B443AD516C41687EAB5F0 /* libPods-SicloCalendar.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SicloCalendar.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		78CE96AC977D53DCA17376EE /* Pods-SicloCalendar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SicloCalendar.debug.xcconfig"; path = "Target Support Files/Pods-SicloCalendar/Pods-SicloCalendar.debug.xcconfig"; sourceTree = "<group>"; };
 		CED4AE6F249308F600CA8028 /* SicloCalendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SicloCalendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CED4AE72249308F600CA8028 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CED4AE74249308F600CA8028 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +55,8 @@
 		CED4AE93249308FB00CA8028 /* SicloCalendarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SicloCalendarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CED4AE97249308FB00CA8028 /* SicloCalendarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SicloCalendarUITests.swift; sourceTree = "<group>"; };
 		CED4AE99249308FB00CA8028 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CED4AEA62493116C00CA8028 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		ED6BA3C9B9C325F74830B476 /* Pods-SicloCalendar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SicloCalendar.release.xcconfig"; path = "Target Support Files/Pods-SicloCalendar/Pods-SicloCalendar.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8459659365998461A412A8F5 /* libPods-SicloCalendar.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,13 +85,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		30BE9ED0280311601EF59A8E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				072B443AD516C41687EAB5F0 /* libPods-SicloCalendar.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		85E5AD955B03528FB22A7C8B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				78CE96AC977D53DCA17376EE /* Pods-SicloCalendar.debug.xcconfig */,
+				ED6BA3C9B9C325F74830B476 /* Pods-SicloCalendar.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		CED4AE66249308F500CA8028 = {
 			isa = PBXGroup;
 			children = (
+				CED4AEA52493115E00CA8028 /* Configuration */,
 				CED4AE71249308F600CA8028 /* SicloCalendar */,
 				CED4AE8B249308FB00CA8028 /* SicloCalendarTests */,
 				CED4AE96249308FB00CA8028 /* SicloCalendarUITests */,
 				CED4AE70249308F600CA8028 /* Products */,
+				85E5AD955B03528FB22A7C8B /* Pods */,
+				30BE9ED0280311601EF59A8E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -131,6 +158,14 @@
 			path = SicloCalendarUITests;
 			sourceTree = "<group>";
 		};
+		CED4AEA52493115E00CA8028 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				CED4AEA62493116C00CA8028 /* GoogleService-Info.plist */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,6 +173,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CED4AE9C249308FB00CA8028 /* Build configuration list for PBXNativeTarget "SicloCalendar" */;
 			buildPhases = (
+				2885D5FFE886DE3F2D1051AB /* [CP] Check Pods Manifest.lock */,
 				CED4AE6B249308F600CA8028 /* Sources */,
 				CED4AE6C249308F600CA8028 /* Frameworks */,
 				CED4AE6D249308F600CA8028 /* Resources */,
@@ -236,6 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CED4AE82249308FB00CA8028 /* LaunchScreen.storyboard in Resources */,
+				CED4AEA72493116C00CA8028 /* GoogleService-Info.plist in Resources */,
 				CED4AE7F249308FB00CA8028 /* Assets.xcassets in Resources */,
 				CED4AE7A249308F600CA8028 /* Main.storyboard in Resources */,
 			);
@@ -256,6 +293,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2885D5FFE886DE3F2D1051AB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SicloCalendar-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CED4AE6B249308F600CA8028 /* Sources */ = {
@@ -436,6 +498,7 @@
 		};
 		CED4AE9D249308FB00CA8028 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78CE96AC977D53DCA17376EE /* Pods-SicloCalendar.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -454,6 +517,7 @@
 		};
 		CED4AE9E249308FB00CA8028 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED6BA3C9B9C325F74830B476 /* Pods-SicloCalendar.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

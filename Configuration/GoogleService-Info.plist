@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>926485494858-ufo4qe0nvk9gg0fgnvuo6ma6njjga5oi.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.926485494858-ufo4qe0nvk9gg0fgnvuo6ma6njjga5oi</string>
+	<key>API_KEY</key>
+	<string>AIzaSyA2wpOqEO-SQjPJWesoQij6YM8qlv0AtuI</string>
+	<key>GCM_SENDER_ID</key>
+	<string>926485494858</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.gastandotenis.SicloCalendar</string>
+	<key>PROJECT_ID</key>
+	<string>siclocalendar</string>
+	<key>STORAGE_BUCKET</key>
+	<string>siclocalendar.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:926485494858:ios:bf04b70ede866b10357ab3</string>
+	<key>DATABASE_URL</key>
+	<string>https://siclocalendar.firebaseio.com</string>
+</dict>
+</plist>

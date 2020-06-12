@@ -1,0 +1,6 @@
+module Pods_SicloCalendar {
+  umbrella header "Pods-SicloCalendar-umbrella.h"
+
+  export *
+  module * { export * }
+}

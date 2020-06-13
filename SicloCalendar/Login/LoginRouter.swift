@@ -25,7 +25,9 @@ class LoginRouter: LoginRoutingProtocol {
     }
     
     func goToCalendar() {
-//        let routing = CalendarRouting()
+        let routing = CalendarRouter()
+        routing.view.modalPresentationStyle = .fullScreen
+        view.present(routing.view, animated: true, completion: nil)
 //        routing.presenter.setUser(user: user)
 //        routing.view.modalPresentationStyle = .fullScreen
 //        view.navigationController?.pushViewController(routing.view, animated: true)

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Calendar View Controller-->
+        <scene sceneID="v7b-0V-tue">
+            <objects>
+                <viewController storyboardIdentifier="CalendarViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="a3d-E7-IQT" customClass="CalendarViewController" customModule="SicloCalendar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3Qx-8s-eHr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tus sesiones de la semana" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mjn-NK-sRg">
+                                <rect key="frame" x="20" y="74" width="374" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="luc-mA-jzb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="lIh-lc-dy3">
+                                <rect key="frame" x="0.0" y="234" width="414" height="628"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="C3W-X7-Xk5">
+                                <rect key="frame" x="20" y="124" width="374" height="90"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="iO0-wD-bJd"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="6KO-s7-Mg7">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Mjn-NK-sRg" firstAttribute="leading" secondItem="xyj-sD-FeJ" secondAttribute="leading" constant="20" id="2oy-nX-PAP"/>
+                            <constraint firstItem="C3W-X7-Xk5" firstAttribute="top" secondItem="Mjn-NK-sRg" secondAttribute="bottom" constant="10" id="9CA-1b-4s4"/>
+                            <constraint firstItem="lIh-lc-dy3" firstAttribute="bottom" secondItem="xyj-sD-FeJ" secondAttribute="bottom" id="CC9-eA-Z45"/>
+                            <constraint firstItem="xyj-sD-FeJ" firstAttribute="trailing" secondItem="C3W-X7-Xk5" secondAttribute="trailing" constant="20" id="IdR-c0-QdZ"/>
+                            <constraint firstItem="xyj-sD-FeJ" firstAttribute="trailing" secondItem="lIh-lc-dy3" secondAttribute="trailing" id="S2i-fP-zyE"/>
+                            <constraint firstItem="xyj-sD-FeJ" firstAttribute="trailing" secondItem="Mjn-NK-sRg" secondAttribute="trailing" constant="20" id="SD4-Oj-uhZ"/>
+                            <constraint firstItem="lIh-lc-dy3" firstAttribute="top" secondItem="C3W-X7-Xk5" secondAttribute="bottom" constant="20" id="ScZ-KU-IkO"/>
+                            <constraint firstItem="lIh-lc-dy3" firstAttribute="leading" secondItem="xyj-sD-FeJ" secondAttribute="leading" id="cqh-sy-NOX"/>
+                            <constraint firstItem="C3W-X7-Xk5" firstAttribute="leading" secondItem="xyj-sD-FeJ" secondAttribute="leading" constant="20" id="l4x-wn-E1w"/>
+                            <constraint firstItem="Mjn-NK-sRg" firstAttribute="top" secondItem="xyj-sD-FeJ" secondAttribute="top" constant="30" id="z4n-Ty-SLY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="xyj-sD-FeJ"/>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="C3W-X7-Xk5" id="T0l-lA-amp"/>
+                        <outlet property="scheduleTableView" destination="lIh-lc-dy3" id="dIQ-OO-y3T"/>
+                        <outlet property="titleLbl" destination="Mjn-NK-sRg" id="zJs-fX-O6A"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gWN-tO-uP8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="63.768115942028992" y="104.46428571428571"/>
+        </scene>
+    </scenes>
+</document>

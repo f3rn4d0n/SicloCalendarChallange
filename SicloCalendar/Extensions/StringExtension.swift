@@ -14,4 +14,19 @@ extension String{
         let emailPred = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
         return emailPred.evaluate(with: self)
     }
+    
+    func getDate() -> Date?{
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss"
+        return dateFormatter.date(from:self)
+    }
+    
+    func cuteDateFormat() -> String{
+        let dateFormatter = DateFormatter()
+        guard let date = self.getDate() else{
+            return self
+        }
+        dateFormatter.dateFormat = "EEEE dd HH:mm"
+        return dateFormatter.string(from: date)
+    }
 }

@@ -12,6 +12,11 @@
 		CE557AB124944A5100D78A40 /* InstructorCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE557AAF24944A5100D78A40 /* InstructorCollectionViewCell.swift */; };
 		CE557AB224944A5100D78A40 /* InstructorCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE557AB024944A5100D78A40 /* InstructorCollectionViewCell.xib */; };
 		CE557AB62494753F00D78A40 /* LocalNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE557AB52494753F00D78A40 /* LocalNotificationManager.swift */; };
+		CE557AB92494849500D78A40 /* VideoClassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE557AB82494849500D78A40 /* VideoClassViewController.swift */; };
+		CE557ABB2494849F00D78A40 /* VideoStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE557ABA2494849F00D78A40 /* VideoStoryboard.storyboard */; };
+		CE557ABD249484BA00D78A40 /* VideoPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE557ABC249484BA00D78A40 /* VideoPresenter.swift */; };
+		CE557ABF249484C500D78A40 /* VideoRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE557ABE249484C500D78A40 /* VideoRouter.swift */; };
+		CE557AC1249484D500D78A40 /* VideoProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE557AC0249484D500D78A40 /* VideoProtocol.swift */; };
 		CED4AE73249308F600CA8028 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4AE72249308F600CA8028 /* AppDelegate.swift */; };
 		CED4AE75249308F600CA8028 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4AE74249308F600CA8028 /* SceneDelegate.swift */; };
 		CED4AE7D249308F600CA8028 /* SicloCalendar.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CED4AE7B249308F600CA8028 /* SicloCalendar.xcdatamodeld */; };
@@ -64,6 +69,11 @@
 		CE557AAF24944A5100D78A40 /* InstructorCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructorCollectionViewCell.swift; sourceTree = "<group>"; };
 		CE557AB024944A5100D78A40 /* InstructorCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InstructorCollectionViewCell.xib; sourceTree = "<group>"; };
 		CE557AB52494753F00D78A40 /* LocalNotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotificationManager.swift; sourceTree = "<group>"; };
+		CE557AB82494849500D78A40 /* VideoClassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoClassViewController.swift; sourceTree = "<group>"; };
+		CE557ABA2494849F00D78A40 /* VideoStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = VideoStoryboard.storyboard; sourceTree = "<group>"; };
+		CE557ABC249484BA00D78A40 /* VideoPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPresenter.swift; sourceTree = "<group>"; };
+		CE557ABE249484C500D78A40 /* VideoRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoRouter.swift; sourceTree = "<group>"; };
+		CE557AC0249484D500D78A40 /* VideoProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoProtocol.swift; sourceTree = "<group>"; };
 		CED4AE6F249308F600CA8028 /* SicloCalendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SicloCalendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CED4AE72249308F600CA8028 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CED4AE74249308F600CA8028 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -168,6 +178,18 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
+		CE557AB72494848200D78A40 /* VideoClass */ = {
+			isa = PBXGroup;
+			children = (
+				CE557AB82494849500D78A40 /* VideoClassViewController.swift */,
+				CE557ABA2494849F00D78A40 /* VideoStoryboard.storyboard */,
+				CE557ABC249484BA00D78A40 /* VideoPresenter.swift */,
+				CE557ABE249484C500D78A40 /* VideoRouter.swift */,
+				CE557AC0249484D500D78A40 /* VideoProtocol.swift */,
+			);
+			path = VideoClass;
+			sourceTree = "<group>";
+		};
 		CED4AE66249308F500CA8028 = {
 			isa = PBXGroup;
 			children = (
@@ -193,12 +215,13 @@
 		CED4AE71249308F600CA8028 /* SicloCalendar */ = {
 			isa = PBXGroup;
 			children = (
+				CE557AB72494848200D78A40 /* VideoClass */,
 				CE557AB42494752800D78A40 /* Utilities */,
 				CE557AB324944ABF00D78A40 /* ReusableCells */,
 				CED4AEA52493115E00CA8028 /* Configuration */,
+				CED4AEA82493469F00CA8028 /* Login */,
 				CED4AEBC249372FD00CA8028 /* Calendar */,
 				CED4AEB92493615200CA8028 /* Extensions */,
-				CED4AEA82493469F00CA8028 /* Login */,
 				CED4AE72249308F600CA8028 /* AppDelegate.swift */,
 				CED4AE74249308F600CA8028 /* SceneDelegate.swift */,
 				CED4AE80249308FB00CA8028 /* LaunchScreen.storyboard */,
@@ -395,6 +418,7 @@
 				CED4AEA72493116C00CA8028 /* GoogleService-Info.plist in Resources */,
 				CED4AE7F249308FB00CA8028 /* Assets.xcassets in Resources */,
 				CED4AEBE2493733500CA8028 /* CalendarStoryboard.storyboard in Resources */,
+				CE557ABB2494849F00D78A40 /* VideoStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,6 +469,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CED4AEAC24934BCF00CA8028 /* LoginPresenter.swift in Sources */,
+				CE557ABF249484C500D78A40 /* VideoRouter.swift in Sources */,
 				CED4AEC924940E8000CA8028 /* CalendarProtocol.swift in Sources */,
 				CE557AB62494753F00D78A40 /* LocalNotificationManager.swift in Sources */,
 				CED4AEB024934BEA00CA8028 /* LoginEntity.swift in Sources */,
@@ -456,14 +481,17 @@
 				CED4AED12494200000CA8028 /* GlobalValues.swift in Sources */,
 				CE557AB124944A5100D78A40 /* InstructorCollectionViewCell.swift in Sources */,
 				CED4AECF24941F1E00CA8028 /* CalendarInteractor.swift in Sources */,
+				CE557ABD249484BA00D78A40 /* VideoPresenter.swift in Sources */,
 				CED4AEB224934BF900CA8028 /* LoginRouter.swift in Sources */,
 				CED4AE7D249308F600CA8028 /* SicloCalendar.xcdatamodeld in Sources */,
 				CED4AEB424934C0300CA8028 /* LoginProtocol.swift in Sources */,
 				CED4AEAA24934B8700CA8028 /* LoginViewController.swift in Sources */,
+				CE557AB92494849500D78A40 /* VideoClassViewController.swift in Sources */,
 				CED4AEC724940E6500CA8028 /* CalendarRouter.swift in Sources */,
 				CE557AAD249428E400D78A40 /* CalendarPresenter.swift in Sources */,
 				CED4AECB24941C9100CA8028 /* CalendarEntity.swift in Sources */,
 				CED4AE75249308F600CA8028 /* SceneDelegate.swift in Sources */,
+				CE557AC1249484D500D78A40 /* VideoProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

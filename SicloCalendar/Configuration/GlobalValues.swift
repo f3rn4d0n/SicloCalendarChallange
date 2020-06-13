@@ -9,8 +9,9 @@
 import UIKit
 
 class GlobalValues: NSObject {
-    let baseURL = "https://api.siclo.com/api/v2/plus/"
-    let calendarURL = "https://api.siclo.com/api/v2/plus/" + "calendar"
+    let calendarURL = "https://api.siclo.com/api/v2/plus/calendar"
+    let videoURL = "https://drive.google.com/file/d/1MjhlX4Q_qvKKeDwB178TeMrnLrLIFw4k/view?usp=sharing"
+    
     
     static let shared = GlobalValues()
 

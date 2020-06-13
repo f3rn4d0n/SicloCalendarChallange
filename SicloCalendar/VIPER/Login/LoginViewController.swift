@@ -27,6 +27,7 @@ class LoginViewController: UIViewController{
     }
     
     func setupUI(){
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
         loginSectionView.layer.cornerRadius = 10
         avatarImg.layer.cornerRadius = avatarImg.frame.width / 2
         emailTxtField.layer.cornerRadius = 5

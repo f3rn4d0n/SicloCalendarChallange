@@ -13,6 +13,7 @@ class LoginRouter: LoginRoutingProtocol {
     var view: LoginViewController = LoginViewController()
     let presenter = LoginPresenter()
     let interactor = LoginInteractor()
+    var navigationController: UINavigationController?
     
     init() {
         let storyboard = UIStoryboard(name: "LoginStoryboard", bundle: nil)
@@ -22,14 +23,13 @@ class LoginRouter: LoginRoutingProtocol {
         presenter.interactor = interactor
         presenter.routing = self
         interactor.presenter = presenter
+        navigationController = UINavigationController(rootViewController: view)
     }
     
     func goToCalendar() {
         let routing = CalendarRouter()
         routing.view.modalPresentationStyle = .fullScreen
-        view.present(routing.view, animated: true, completion: nil)
-//        routing.presenter.setUser(user: user)
-//        routing.view.modalPresentationStyle = .fullScreen
-//        view.navigationController?.pushViewController(routing.view, animated: true)
+//        view.present(routing.view, animated: true, completion: nil)
+        view.navigationController?.pushViewController(routing.view, animated: true)
     }
 }

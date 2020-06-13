@@ -28,13 +28,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
     }
 
     func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
-            
         guard var rootViewController = (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.window?.rootViewController else {
             return
         }
-
-        // change your view controller here
-        rootViewController = UIViewController()
+        let routing = VideoRouter()
+        rootViewController.present(routing.view, animated: true, completion: nil)
     }
     
     // MARK: UISceneSession Lifecycle

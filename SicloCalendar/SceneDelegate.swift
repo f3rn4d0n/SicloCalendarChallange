@@ -19,8 +19,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
          if let windowScene = scene as? UIWindowScene{
             let window = UIWindow(windowScene: windowScene)
-            let routing = CalendarRouter()
-            window.rootViewController = routing.view
+            let routing = LoginRouter()
+//            window.rootViewController = routing.view
+            window.rootViewController = routing.navigationController
             self.window = window
             window.makeKeyAndVisible()
         }

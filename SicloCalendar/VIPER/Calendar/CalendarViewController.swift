@@ -28,12 +28,10 @@ class CalendarViewController: UIViewController,NVActivityIndicatorViewable {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        if presenter?.countSchedules() ?? 0 <= 0{
-            presenter?.loadSchedules()
-        }
     }
     
     func setupUI(){
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
         scheduleTableView.layer.cornerRadius = 5
         scheduleTableView.layer.masksToBounds = true
         scheduleTableView.backgroundColor = .clear
@@ -80,6 +78,7 @@ extension CalendarViewController: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let day = presenter?.getScheduleDayOf(index: section) ?? ""
         let headerView = UIView()
+        headerView.backgroundColor = .black
         let headerLabel = UILabel(frame: CGRect(x: 10, y: 0, width: tableView.bounds.size.width-20, height: 28))
         headerLabel.textColor = UIColor.white
         headerLabel.backgroundColor = .black

@@ -8,6 +8,15 @@
 
 import UIKit
 
-class VideoProtocol: NSObject {
+protocol VideoViewProtocol{
+    
+}
 
+protocol VideoPresenterProtocol{
+    func requestForVideoUrl() -> URL
+    func goBack()
+}
+
+protocol VideoRoutingProtocol{
+    func goBack()
 }

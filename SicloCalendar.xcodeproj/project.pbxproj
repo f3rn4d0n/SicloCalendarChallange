@@ -17,6 +17,7 @@
 		CE557ABD249484BA00D78A40 /* VideoPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE557ABC249484BA00D78A40 /* VideoPresenter.swift */; };
 		CE557ABF249484C500D78A40 /* VideoRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE557ABE249484C500D78A40 /* VideoRouter.swift */; };
 		CE557AC1249484D500D78A40 /* VideoProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE557AC0249484D500D78A40 /* VideoProtocol.swift */; };
+		CE557AC52494879D00D78A40 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE557AC42494879D00D78A40 /* WebKit.framework */; };
 		CED4AE73249308F600CA8028 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4AE72249308F600CA8028 /* AppDelegate.swift */; };
 		CED4AE75249308F600CA8028 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4AE74249308F600CA8028 /* SceneDelegate.swift */; };
 		CED4AE7D249308F600CA8028 /* SicloCalendar.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CED4AE7B249308F600CA8028 /* SicloCalendar.xcdatamodeld */; };
@@ -74,6 +75,7 @@
 		CE557ABC249484BA00D78A40 /* VideoPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPresenter.swift; sourceTree = "<group>"; };
 		CE557ABE249484C500D78A40 /* VideoRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoRouter.swift; sourceTree = "<group>"; };
 		CE557AC0249484D500D78A40 /* VideoProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoProtocol.swift; sourceTree = "<group>"; };
+		CE557AC42494879D00D78A40 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		CED4AE6F249308F600CA8028 /* SicloCalendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SicloCalendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CED4AE72249308F600CA8028 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CED4AE74249308F600CA8028 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE557AC52494879D00D78A40 /* WebKit.framework in Frameworks */,
 				8459659365998461A412A8F5 /* libPods-SicloCalendar.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,6 +141,7 @@
 		30BE9ED0280311601EF59A8E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CE557AC42494879D00D78A40 /* WebKit.framework */,
 				072B443AD516C41687EAB5F0 /* libPods-SicloCalendar.a */,
 			);
 			name = Frameworks;
@@ -170,24 +174,42 @@
 			path = ReusableCells;
 			sourceTree = "<group>";
 		};
-		CE557AB42494752800D78A40 /* Utilities */ = {
+		CE557AB42494752800D78A40 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
 				CE557AB52494753F00D78A40 /* LocalNotificationManager.swift */,
 			);
-			path = Utilities;
+			path = Managers;
 			sourceTree = "<group>";
 		};
 		CE557AB72494848200D78A40 /* VideoClass */ = {
 			isa = PBXGroup;
 			children = (
-				CE557AB82494849500D78A40 /* VideoClassViewController.swift */,
 				CE557ABA2494849F00D78A40 /* VideoStoryboard.storyboard */,
+				CE557AB82494849500D78A40 /* VideoClassViewController.swift */,
 				CE557ABC249484BA00D78A40 /* VideoPresenter.swift */,
 				CE557ABE249484C500D78A40 /* VideoRouter.swift */,
 				CE557AC0249484D500D78A40 /* VideoProtocol.swift */,
 			);
 			path = VideoClass;
+			sourceTree = "<group>";
+		};
+		CE557AC22494852C00D78A40 /* VIPER */ = {
+			isa = PBXGroup;
+			children = (
+				CE557AB72494848200D78A40 /* VideoClass */,
+				CED4AEA82493469F00CA8028 /* Login */,
+				CED4AEBC249372FD00CA8028 /* Calendar */,
+			);
+			path = VIPER;
+			sourceTree = "<group>";
+		};
+		CE557AC32494854200D78A40 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				CE557AB324944ABF00D78A40 /* ReusableCells */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 		CED4AE66249308F500CA8028 = {
@@ -215,12 +237,10 @@
 		CED4AE71249308F600CA8028 /* SicloCalendar */ = {
 			isa = PBXGroup;
 			children = (
-				CE557AB72494848200D78A40 /* VideoClass */,
-				CE557AB42494752800D78A40 /* Utilities */,
-				CE557AB324944ABF00D78A40 /* ReusableCells */,
 				CED4AEA52493115E00CA8028 /* Configuration */,
-				CED4AEA82493469F00CA8028 /* Login */,
-				CED4AEBC249372FD00CA8028 /* Calendar */,
+				CE557AB42494752800D78A40 /* Managers */,
+				CE557AC32494854200D78A40 /* Utilities */,
+				CE557AC22494852C00D78A40 /* VIPER */,
 				CED4AEB92493615200CA8028 /* Extensions */,
 				CED4AE72249308F600CA8028 /* AppDelegate.swift */,
 				CED4AE74249308F600CA8028 /* SceneDelegate.swift */,

@@ -38,8 +38,11 @@ class CalendarPresenter: CalendarPresenterProtocol {
     }
     
     func getScheduleDayOf(index: Int) -> String? {
-        let arr = calendar?.calendar.keys
-        return "Sáb 13"
+        var arr:[String] = []
+        for day in calendar!.calendar.keys{
+            arr.append(day)
+        }
+        return arr[index]
     }
     
     
@@ -48,9 +51,14 @@ class CalendarPresenter: CalendarPresenterProtocol {
             LocalNotificationManager.shared.scheduleNotification(
                 title: "Unete a tu sesión de \(schedule.tipo)",
                 body: "No te puedes perder tu clase con \(schedule.instructor.nombre), estamos apunto de comenzar",
-                timeInterval: 3,
+                timeInterval: date.timeIntervalSinceNow,
                 identifier: "\(schedule.id)")
         }
+        LocalNotificationManager.shared.scheduleNotification(
+        title: "Primera llamada para la sesión en vivo de \(schedule.tipo)",
+        body: "Preparate para tu clase con \(schedule.instructor.nombre), te esperamos!",
+        timeInterval: 5,
+        identifier: "\(schedule.id)Test")
     }
     
     func countScheduleBy(date: String) -> Int? {

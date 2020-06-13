@@ -7,6 +7,7 @@ def sicloPods
   
   # UI Elements
   pod 'NVActivityIndicatorView' # Loading view
+  pod 'Cosmos', '~> 22.1'
   
   # Firebase
   pod 'Firebase/Analytics' # Analytics

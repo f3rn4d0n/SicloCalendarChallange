@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		8459659365998461A412A8F5 /* libPods-SicloCalendar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 072B443AD516C41687EAB5F0 /* libPods-SicloCalendar.a */; };
+		CE557AAD249428E400D78A40 /* CalendarPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE557AAC249428E400D78A40 /* CalendarPresenter.swift */; };
+		CE557AB124944A5100D78A40 /* InstructorCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE557AAF24944A5100D78A40 /* InstructorCollectionViewCell.swift */; };
+		CE557AB224944A5100D78A40 /* InstructorCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE557AB024944A5100D78A40 /* InstructorCollectionViewCell.xib */; };
+		CE557AB62494753F00D78A40 /* LocalNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE557AB52494753F00D78A40 /* LocalNotificationManager.swift */; };
 		CED4AE73249308F600CA8028 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4AE72249308F600CA8028 /* AppDelegate.swift */; };
 		CED4AE75249308F600CA8028 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4AE74249308F600CA8028 /* SceneDelegate.swift */; };
 		CED4AE7D249308F600CA8028 /* SicloCalendar.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CED4AE7B249308F600CA8028 /* SicloCalendar.xcdatamodeld */; };
@@ -25,6 +29,15 @@
 		CED4AEB62493540B00CA8028 /* LoginStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CED4AEB52493540B00CA8028 /* LoginStoryboard.storyboard */; };
 		CED4AEB82493564600CA8028 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CED4AEB72493564600CA8028 /* Colors.xcassets */; };
 		CED4AEBB2493616600CA8028 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4AEBA2493616600CA8028 /* StringExtension.swift */; };
+		CED4AEBE2493733500CA8028 /* CalendarStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CED4AEBD2493733500CA8028 /* CalendarStoryboard.storyboard */; };
+		CED4AEC02493CCC200CA8028 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4AEBF2493CCC200CA8028 /* CalendarViewController.swift */; };
+		CED4AEC42493EC3200CA8028 /* TrainingScheduleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4AEC22493EC3200CA8028 /* TrainingScheduleTableViewCell.swift */; };
+		CED4AEC52493EC3200CA8028 /* TrainingScheduleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED4AEC32493EC3200CA8028 /* TrainingScheduleTableViewCell.xib */; };
+		CED4AEC724940E6500CA8028 /* CalendarRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4AEC624940E6500CA8028 /* CalendarRouter.swift */; };
+		CED4AEC924940E8000CA8028 /* CalendarProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4AEC824940E8000CA8028 /* CalendarProtocol.swift */; };
+		CED4AECB24941C9100CA8028 /* CalendarEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4AECA24941C9100CA8028 /* CalendarEntity.swift */; };
+		CED4AECF24941F1E00CA8028 /* CalendarInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4AECE24941F1E00CA8028 /* CalendarInteractor.swift */; };
+		CED4AED12494200000CA8028 /* GlobalValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4AED02494200000CA8028 /* GlobalValues.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +60,10 @@
 /* Begin PBXFileReference section */
 		072B443AD516C41687EAB5F0 /* libPods-SicloCalendar.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SicloCalendar.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		78CE96AC977D53DCA17376EE /* Pods-SicloCalendar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SicloCalendar.debug.xcconfig"; path = "Target Support Files/Pods-SicloCalendar/Pods-SicloCalendar.debug.xcconfig"; sourceTree = "<group>"; };
+		CE557AAC249428E400D78A40 /* CalendarPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarPresenter.swift; sourceTree = "<group>"; };
+		CE557AAF24944A5100D78A40 /* InstructorCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructorCollectionViewCell.swift; sourceTree = "<group>"; };
+		CE557AB024944A5100D78A40 /* InstructorCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InstructorCollectionViewCell.xib; sourceTree = "<group>"; };
+		CE557AB52494753F00D78A40 /* LocalNotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotificationManager.swift; sourceTree = "<group>"; };
 		CED4AE6F249308F600CA8028 /* SicloCalendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SicloCalendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CED4AE72249308F600CA8028 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CED4AE74249308F600CA8028 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -70,6 +87,15 @@
 		CED4AEB52493540B00CA8028 /* LoginStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginStoryboard.storyboard; sourceTree = "<group>"; };
 		CED4AEB72493564600CA8028 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		CED4AEBA2493616600CA8028 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		CED4AEBD2493733500CA8028 /* CalendarStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CalendarStoryboard.storyboard; sourceTree = "<group>"; };
+		CED4AEBF2493CCC200CA8028 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		CED4AEC22493EC3200CA8028 /* TrainingScheduleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingScheduleTableViewCell.swift; sourceTree = "<group>"; };
+		CED4AEC32493EC3200CA8028 /* TrainingScheduleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrainingScheduleTableViewCell.xib; sourceTree = "<group>"; };
+		CED4AEC624940E6500CA8028 /* CalendarRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarRouter.swift; sourceTree = "<group>"; };
+		CED4AEC824940E8000CA8028 /* CalendarProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarProtocol.swift; sourceTree = "<group>"; };
+		CED4AECA24941C9100CA8028 /* CalendarEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarEntity.swift; sourceTree = "<group>"; };
+		CED4AECE24941F1E00CA8028 /* CalendarInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarInteractor.swift; sourceTree = "<group>"; };
+		CED4AED02494200000CA8028 /* GlobalValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalValues.swift; sourceTree = "<group>"; };
 		ED6BA3C9B9C325F74830B476 /* Pods-SicloCalendar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SicloCalendar.release.xcconfig"; path = "Target Support Files/Pods-SicloCalendar/Pods-SicloCalendar.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -116,10 +142,35 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		CE557AAE249449FC00D78A40 /* InstructorCell */ = {
+			isa = PBXGroup;
+			children = (
+				CE557AAF24944A5100D78A40 /* InstructorCollectionViewCell.swift */,
+				CE557AB024944A5100D78A40 /* InstructorCollectionViewCell.xib */,
+			);
+			path = InstructorCell;
+			sourceTree = "<group>";
+		};
+		CE557AB324944ABF00D78A40 /* ReusableCells */ = {
+			isa = PBXGroup;
+			children = (
+				CED4AEC12493EBE800CA8028 /* ScheduleTraining */,
+				CE557AAE249449FC00D78A40 /* InstructorCell */,
+			);
+			path = ReusableCells;
+			sourceTree = "<group>";
+		};
+		CE557AB42494752800D78A40 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				CE557AB52494753F00D78A40 /* LocalNotificationManager.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		CED4AE66249308F500CA8028 = {
 			isa = PBXGroup;
 			children = (
-				CED4AEA52493115E00CA8028 /* Configuration */,
 				CED4AE71249308F600CA8028 /* SicloCalendar */,
 				CED4AE8B249308FB00CA8028 /* SicloCalendarTests */,
 				CED4AE96249308FB00CA8028 /* SicloCalendarUITests */,
@@ -142,6 +193,10 @@
 		CED4AE71249308F600CA8028 /* SicloCalendar */ = {
 			isa = PBXGroup;
 			children = (
+				CE557AB42494752800D78A40 /* Utilities */,
+				CE557AB324944ABF00D78A40 /* ReusableCells */,
+				CED4AEA52493115E00CA8028 /* Configuration */,
+				CED4AEBC249372FD00CA8028 /* Calendar */,
 				CED4AEB92493615200CA8028 /* Extensions */,
 				CED4AEA82493469F00CA8028 /* Login */,
 				CED4AE72249308F600CA8028 /* AppDelegate.swift */,
@@ -177,6 +232,7 @@
 				CED4AE7E249308FB00CA8028 /* Assets.xcassets */,
 				CED4AEB72493564600CA8028 /* Colors.xcassets */,
 				CED4AEA62493116C00CA8028 /* GoogleService-Info.plist */,
+				CED4AED02494200000CA8028 /* GlobalValues.swift */,
 			);
 			path = Configuration;
 			sourceTree = "<group>";
@@ -201,6 +257,29 @@
 				CED4AEBA2493616600CA8028 /* StringExtension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CED4AEBC249372FD00CA8028 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				CED4AEBD2493733500CA8028 /* CalendarStoryboard.storyboard */,
+				CED4AEBF2493CCC200CA8028 /* CalendarViewController.swift */,
+				CE557AAC249428E400D78A40 /* CalendarPresenter.swift */,
+				CED4AECE24941F1E00CA8028 /* CalendarInteractor.swift */,
+				CED4AEC824940E8000CA8028 /* CalendarProtocol.swift */,
+				CED4AEC624940E6500CA8028 /* CalendarRouter.swift */,
+				CED4AECA24941C9100CA8028 /* CalendarEntity.swift */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		CED4AEC12493EBE800CA8028 /* ScheduleTraining */ = {
+			isa = PBXGroup;
+			children = (
+				CED4AEC22493EC3200CA8028 /* TrainingScheduleTableViewCell.swift */,
+				CED4AEC32493EC3200CA8028 /* TrainingScheduleTableViewCell.xib */,
+			);
+			path = ScheduleTraining;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -308,11 +387,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CED4AEC52493EC3200CA8028 /* TrainingScheduleTableViewCell.xib in Resources */,
 				CED4AEB82493564600CA8028 /* Colors.xcassets in Resources */,
+				CE557AB224944A5100D78A40 /* InstructorCollectionViewCell.xib in Resources */,
 				CED4AE82249308FB00CA8028 /* LaunchScreen.storyboard in Resources */,
 				CED4AEB62493540B00CA8028 /* LoginStoryboard.storyboard in Resources */,
 				CED4AEA72493116C00CA8028 /* GoogleService-Info.plist in Resources */,
 				CED4AE7F249308FB00CA8028 /* Assets.xcassets in Resources */,
+				CED4AEBE2493733500CA8028 /* CalendarStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,14 +445,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				CED4AEAC24934BCF00CA8028 /* LoginPresenter.swift in Sources */,
+				CED4AEC924940E8000CA8028 /* CalendarProtocol.swift in Sources */,
+				CE557AB62494753F00D78A40 /* LocalNotificationManager.swift in Sources */,
 				CED4AEB024934BEA00CA8028 /* LoginEntity.swift in Sources */,
 				CED4AEBB2493616600CA8028 /* StringExtension.swift in Sources */,
+				CED4AEC02493CCC200CA8028 /* CalendarViewController.swift in Sources */,
 				CED4AEAE24934BDA00CA8028 /* LoginInteractor.swift in Sources */,
 				CED4AE73249308F600CA8028 /* AppDelegate.swift in Sources */,
+				CED4AEC42493EC3200CA8028 /* TrainingScheduleTableViewCell.swift in Sources */,
+				CED4AED12494200000CA8028 /* GlobalValues.swift in Sources */,
+				CE557AB124944A5100D78A40 /* InstructorCollectionViewCell.swift in Sources */,
+				CED4AECF24941F1E00CA8028 /* CalendarInteractor.swift in Sources */,
 				CED4AEB224934BF900CA8028 /* LoginRouter.swift in Sources */,
 				CED4AE7D249308F600CA8028 /* SicloCalendar.xcdatamodeld in Sources */,
 				CED4AEB424934C0300CA8028 /* LoginProtocol.swift in Sources */,
 				CED4AEAA24934B8700CA8028 /* LoginViewController.swift in Sources */,
+				CED4AEC724940E6500CA8028 /* CalendarRouter.swift in Sources */,
+				CE557AAD249428E400D78A40 /* CalendarPresenter.swift in Sources */,
+				CED4AECB24941C9100CA8028 /* CalendarEntity.swift in Sources */,
 				CED4AE75249308F600CA8028 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
